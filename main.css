@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 10000px;
+}
+.main-container{
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-background{
+    background: url('https://images.pexels.com/photos/373893/pexels-photo-373893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+.header-background__overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+}
+.header-background__text-container{
+    max-width: 767px;
+    margin: auto auto; 
+    position: relative;
+    z-index: 5;
+}
+.header-background h1, p, a, button{
+    margin: 0;
+    color: white;
+
+}
+
+.header-background h1{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.header-background p{
+    font-weight: 300;
+    font-size: 20px;
+}
+.header-background a{
+    margin: 50px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.2s all ease-in-out;
+}
+a:hover{
+    background-color: rgba(197, 98, 41, 0.74);
+    border: 1px solid rgba(197, 98, 41, 0.74);
+}
+
+.hr-orange{
+    margin: 30px 0px;
+    border: 3px solid rgba(197, 98, 41, 0.74);
+}
+
+/* -------------------------- Bad idea -------------------------- */
+
+a{
+    background-color: red;
+}
+
+
+#link-id {
+    background-color: cyan;
+}
+
+/* -------------------------- Best idea -------------------------- */
+
+.link-class{
+    background-color: blue;
+}
+
